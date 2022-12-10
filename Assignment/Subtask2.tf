@@ -70,7 +70,7 @@ resource "aws_subnet" "ca-public-subnet-1b" {
 
 
 resource "aws_subnet" "ca-private-subnet-1a" {
-  availability_zone = "${data.aws_availability_zones.abhi134-azs.names[0]}"
+  availability_zone = "${data.aws_availability_zones.ca-azs.names[0]}"
   cidr_block        = "10.10.30.0/24"
   vpc_id            = "${aws_vpc.ca-vpc.id}"
   tags = {
