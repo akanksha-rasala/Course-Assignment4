@@ -39,7 +39,7 @@ resource "aws_instance" "App" {
 
   ami                    = "ami-0149b2da6ceec4bb0"
   instance_type          = "t3.small"
-  key_name               = "ca"
+  key_name               = "ca "
   
   subnet_id              = aws_subnet.ca-private-subnet-1b.id
   security_groups        = [aws_security_group.Public-web_SG.name]
