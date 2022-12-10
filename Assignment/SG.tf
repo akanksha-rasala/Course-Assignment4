@@ -1,7 +1,7 @@
 resource "aws_security_group" "bastion-host134_SG" {
   name        = "bastion-host134_sg"
   description = "Allow ssh inbound traffic"
-  vpc_id      = aws_vpc.abhi134.id
+  vpc_id      = aws_vpc.ca-vpc.id
 
   ingress {
     description      = "ssh from bastion"
