@@ -19,7 +19,7 @@ resource "aws_vpc" "ca-vpc" {
 
 
 resource "aws_internet_gateway" "ca-igw" {
- vpc_id = "${aws_vpc.abhi134.id}"
+ vpc_id = "${aws_vpc.ca-vpc.id}"
  tags = {
     Name = "ca-igw"
  }
